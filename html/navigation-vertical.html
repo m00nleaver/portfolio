@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>심연경</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" href="./bigtitle.css">
+	<link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+
+	.intro p{
+		color: black;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+	#dial{height: 220px; width: 136px;}
+        #phone{height: 350px; width: 230px;}
+        
+        .container{width: 630px; margin: 30px auto 0;}
+        .box{float: left; width: 255px; height: 515px;margin: 0 0px;
+        position: relative;}
+        .front{
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        .back{
+            position: absolute;
+            top:43px;
+            left: 34px;
+        }
+		.box1{
+			border: 1px solid black;
+			width: 400px; height: 300px;
+			float: right;
+			margin-right: 100px;
+		}
+		.box1 >p{
+			padding: 20px;
+			text-align: left;
+		}
+
+		#section1{
+		background-image: url(./../img/bgimg02.jpg);
+		margin-left: 10%;
+		
+	}
+	</style>
+
+</head>
+<body>
+<!-- 메뉴!
+
+-->
+<div class="menu1">
+<ul id="menu">
+	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+	<li data-menuanchor="4thPage"><a href="#4thPage">fourth slide</a></li>
+	<li data-menuanchor="lastPage"><a href="#lastPage">lastPage</a></li>
+</ul>
+</div>
+<div id="fullpage">
+	
+	<!--main-->
+	<div class="section " id="section0">
+		<div class="intro">
+			<img src="./../img/main_name.gif" width="280px" height="70px">
+			<p id="big-title">안녕하세요,<br>개발자 심연경입니다.</p>
+		</div>
+	</div>
+	<!--About-->
+	<div class="section" id="section1">
+		<div class="intro">
+			<!--
+		<p>안녕하세요,</p>
+		<p>신입 개발자 심연경입니다.</p>
+		<br>
+		<p>법률은 특별한 규정이 없는 한 공포한 날로부터 20일을 경과함으로써 효력을 발생한다. </p>
+		<p>국회의 회의는 공개한다.</p>
+		<br>
+		<p>법관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니하며, </p>
+			<p>징계처분에 의하지 아니하고는 정직·감봉 기타 불리한 처분을 받지 아니한다.</p>
+-->
+		</div>
+	</div>
+	<!--experience-->
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>experience</h1>
+			<p>And it will animate down to the first section</p>
+		</div>
+	</div>
+
+	<!--portfolio-->
+	<div class="section" id="section3">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>Clickable</h1>
+				<p>
+					You can even click on the navigation and jump directly to another section.
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2">
+			<h1>Slide 2</h1>
+		</div>
+
+	</div>
+
+
+	<!--contact-->
+	<div class="section" id="section4">
+		<div class="intro">
+			<h1>Contact</h1>
+			<div class="container">
+				<div class="box">
+					<div class="front"><img src="./../img/smartphone.png" id="phone"></div>
+					<div class="back"><img src="../img/dial.gif" id="dial"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="box1">
+			<p>(tel)010-4627-0870</p>
+			<p>(email) shimyeonkyung@kakao.com</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../dist/fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
+        sectionsColor: ['#FFFFFF', '#FFFFFF', '#7BAABE', 'whitesmoke', '#ccddff'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Main', 'About', 'Experience', 'Protfolio', 'Contact']
+    });
+</script>
+
+</body>
+</html>
