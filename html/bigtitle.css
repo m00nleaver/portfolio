@@ -20,12 +20,119 @@
     margin-top: 30px;
     text-align: center;
     font-size:5em;
-    width: 80%;
+    width: 100%;
 }
 
 .intro{
     font-family: 'SBAggroB';
     color: black;
-    text-align:center;
+    
 }
 
+.intro >img{
+    text-align:center;
+}
+.intro >p{
+    text-align: left;
+}
+
+/* Style for our header texts
+	* --------------------------------------- */
+
+	.intro p{
+		color: black;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Overwriting styles for control arrows for slides
+	* --------------------------------------- */
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+	#introTitle{
+		font-family: '나눔고딕 ExtraBold';
+		font-size: 5em;
+		color: #444;
+
+	}
+   
+	#dial{height: 360px; width: 224px;}
+    #phone{height: 560px; width: 380px;}
+        
+    .container{width: 630px; margin: 50px auto 0;}
+    .box{float: left; width: 255px; height: 515px;margin: 0 0px;
+        position: relative;}
+        
+		.front{
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        .back{
+            position: absolute;
+            top:62px;
+            left: 56px;
+        }
+		.box1{
+			margin-top: 30px;
+			/*border: 1px solid black;*/
+			width: 400px; height: 300px;
+			float: right;
+			margin-right: 120px;
+		}
+		.box1 >p{
+			padding: 20px;
+			text-align: left;
+		}
+		.box1 a{
+			color: black;
+			text-decoration: underline;
+			text-underline-position: under;
+		}
+		.box1 a:hover{
+			color: #ffbf69;
+		}
+
+		#section1{background-image: url(./../img/bgimg01.png);}
+		
+		.slider {
+			margin-left: auto;
+			margin-right: auto;
+		  width: 640px;
+		  height: 360px;
+		}
+		.box2 {
+		  text-align: center;
+		  line-height: 100px;
+		  font-size: 60px;
+		  color: #fff;
+		  font-weight: bold;
+		}
+		.banner{
+			width: 640px;
+		  height: 360px;
+		}
+
+		#explain{
+			margin-top: 15px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			font-size: 0.5em;
+		}

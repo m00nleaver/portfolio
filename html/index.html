@@ -1,105 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Matthew Howell" />
-    <meta name="description" content="fullPage continuous scrolling demo." />
-    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
-    <meta name="Resource-type" content="Document" />
-    <title>ShimYeonKyung</title>
-    <link rel="stylesheet" href="./bigtitle.css">
-    <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
-    <link rel="stylesheet" type="text/css" href="examples.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>심연경 portfolio</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" href="./bigtitle.css">
+	<link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	
 </head>
 <body>
- <!--   
-<ul id="menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
-    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-    <li data-menuanchor="4thPage"><a href="#4thPage">fourth slide</a></li>
-</ul>
+<!-- 메뉴!
+
 -->
-<div id="fullpage">
-    
-    <!--main-->
-    <div class="section " id="section0">
-        <section class="home">
-            <main class="index-main">
-                <article id="HomeTitle" class="Home-title">
-                    <div class="wrap">
-                        <div class="text-box">
-                            <p class="big-title">
-                                <strong>
-                                    <img src="./../img/main_gif.gif" width="200px" height="50px">
-                                </strong>
-                                <br>
-                                안녕하세요,<br>개발자 심연경입니다.
-                                <br>
-                                <!--<img src="./../img/main_char.gif" width="100px" height="100px" text-align="left">-->
-                            </p>
-                        </div>
-                        <div class="slick-track"></div>
-                    </div>
-                </article>
-        
-            </main>
-        </section>
-    </div>
-    
-    <!--About-->
-    <div class="section" id="section1">
-        <div class="intro">
-            <h1>About</h1>
-            <p>Go to the first section and scroll up or to the last one and scroll down to see how it works.</p>
-        </div>
-    </div>
-    <!--experience-->
-    <div class="section" id="section2">
-        <div class="intro">
-            <h1>experience</h1>
-            <p>And it will animate down to the first section</p>
-        </div>
-    </div>
-    <!--protfolio-->
-    <div class="section" id="section3">
-        <div class="intro">
-            <h1>Protfolio</h1>
-            <p>앙!!</p>
-        </div>
-    </div>
-    <!--contact-->
-    <div class="section" id="section4">
-        <div class="intro">
-            <h1>Contact</h1>
-            <p>앙!!</p>
-        </div>
-    </div>
+<div class="menu1">
+<ul id="menu">
+	<li data-menuanchor="4thPage"><a href="#4thPage">Contact</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Experience</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">About me</a></li>
+	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">Intro</a></li>
+	
+</ul>
 </div>
 
 
+<div id="fullpage">
+	
+	<!--main-->
+	<div class="section " id="section0">
+		<div class="intro">
+			
+			<br>
+			<img src="./../img/main_banner.gif" width="280px" height="70px">
+			
+			<p id="big-title">안녕하세요,<br>개발자 심연경입니다.
+				</p>
+			
+		</div>
+	</div>
+	<!--About-->
+	<div class="section" id="section1">
+		<div class="intro">
+		<p id=introTitle>三人行必有我師</p>
+		<br>
+		<p> 안녕하세요, <br>신입 개발자 심연경입니다.</p>
+		<br>
+		<p>"세 사람이 함께 길을 가면 그 중 <br>반드시 내 스승이 있다."는 말이 있습니다.</p>
+		<br>
+		<p>개발하면서 만난 모든 사람들을 스승으로 여기고<br> 배우려 노력하고 있습니다.</p>
 
 
+
+		</div>
+	</div>
+
+
+
+	<!--experience--> <!--portfolio-->
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>experience</h1>
+
+			<section id="slider1" class="slider">
+				<!-- 교육과정 -->
+				<div class="box2" >
+					<a href="./../detail/detail01.html">
+						<img class ="banner" src="../img/banner1.JPG">	
+					</a>
+				</div>
+				
+				<!-- 구프 -->
+				<div class="box2" >
+					<a href="./../detail/detail02.html">
+					<img class ="banner" src="../img/banner2.JPG" alt="">
+					</a>
+				</div>
+				<!-- 씽씽마트 -->
+				<div class="box2" >
+					<a href="./../detail/detail03.html">
+						<img class ="banner" src="../img/banner3.JPG" alt="">
+					</a>
+				</div>
+				<!-- DB프로젝트 -->
+				<div class="box2" >
+					<a href="./../detail/detail04.html">
+						<img class ="banner" src="../img/banner4.JPG" alt="">
+					</a>
+				</div>
+				
+			</section>
+			
+			<p id="explain">이미지 클릭 시 포트폴리오 상세 페이지로 이동합니다.</p>
+		</div>
+	</div>
+
+	<!--contact-->
+	<div class="section" id="section3">
+		<div class="intro">
+				<!--<h1>Contact</h1>-->
+				<div class="container">
+					<div class="box">
+						<div class="front"><img src="./../img/smartphone.png" id="phone"></div>
+						<div class="back"><img src="../img/mailing.gif" id="dial"></div>
+					</div>
+				</div>
+			
+				<h1>Contact</h1>
+			<div class="box1">
+				
+				읽어주셔서 감사합니다.
+				<br><br>
+				필요시 아래 연락처로 연락주세요<br><br>
+				<a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=superyym@gmail.com">
+					(pc) superyym@gmail.com</a>
+					<br><br>
+				<a href="http://qr.kakao.com/talk/88yuOvhfAZQYUX5pHMgBuBkoCLw-">
+					(mobile) kakaotalk</a>
+				
+				
+			</div>
+		</div>
+	
+	</div>
+
+</div>
+
+<script>
+	function Slider(target, type) {
+			// 상태
+			let index = 1;
+			let isMoved = true;
+			const speed = 1000; // ms
+
+			// 방향
+			const transform = "transform " + speed / 1000 + "s";
+			let 
+			translate = (i) => "translateX(-" + 100 * i + "%)";
+			//if (type === "V") {
+				//translate = (i) => "translateY(-" + 100 * i + "%)";
+			//}
+
+			// 슬라이더
+			const slider = document.querySelector(target);
+			const sliderRects = slider.getClientRects()[0];
+			slider.style["overflow"] = "hidden";
+
+			// 슬라이더 화면 컨테이너
+			const container = document.createElement("div");
+			container.style["display"] = "flex";
+			container.style["flex-direction"] = type === "V" ? "column" : "row";
+			container.style["width"] = sliderRects.width + "px";
+			container.style["height"] = sliderRects.height + "px";
+			container.style["transform"] = translate(index);
+
+			// 슬라이더 화면 목록
+			let boxes = [].slice.call(slider.children);
+			boxes = [].concat(boxes[boxes.length - 1], boxes, boxes[0]);
+
+			// 슬라이더 화면 스타일
+			const size = boxes.length;
+			for (let i = 0; i < size; i++) {
+				const box = boxes[i];
+				box.style["flex"] = "none";
+				box.style["flex-wrap"] = "wrap";
+				box.style["height"] = "100%";
+				box.style["width"] = "100%";
+				container.appendChild(box.cloneNode(true));
+			}
+
+			// 처음/마지막 화면 눈속임 이벤트
+			container.addEventListener("transitionstart", function () {
+				isMoved = false;
+				setTimeout(() => {
+					isMoved = true;
+				}, speed);
+			});
+			container.addEventListener("transitionend", function () {
+				// 처음으로 순간이동
+				if (index === size - 1) {
+					index = 1;
+					container.style["transition"] = "none";
+					container.style["transform"] = translate(index);
+				}
+				// 끝으로 순간이동
+				if (index === 0) {
+					index = size - 2;
+					container.style["transition"] = "none";
+					container.style["transform"] = translate(index);
+				}
+			});
+
+			// 슬라이더 붙이기
+			slider.innerHTML = "";
+			slider.appendChild(container);
+
+			return {
+				move: function (i) {
+					if (isMoved === true) {
+						index = i;
+						container.style["transition"] = transform;
+						container.style["transform"] = translate(index);
+					}
+				},
+				next: function () {
+					if (isMoved === true) {
+						index = (index + 1) % size;
+						container.style["transition"] = transform;
+						container.style["transform"] = translate(index);
+					}
+				},
+				prev: function () {
+					if (isMoved === true) {
+						index = index === 0 ? index + size : index;
+						index = (index - 1) % size;
+						container.style["transition"] = transform;
+						container.style["transform"] = translate(index);
+					}
+				}
+			};
+		}
+
+		const s1 = new Slider("#slider1", "H");
+		//const s2 = new Slider("#slider2", "V");
+
+		setInterval(() => {
+			s1.next();
+			//s2.next();
+		}, 1000)
+</script>
 
 <script type="text/javascript" src="../dist/fullpage.js"></script>
 <script type="text/javascript" src="examples.js"></script>
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        sectionsColor: ['#2EC4B6', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-        menu: '#menu',
-        continuousVertical: true,
-        afterLoad: function (anchorLink, index) {
-            console.log("AFTER LOAD - anchorLink:" + anchorLink + " index:" + index);
-        },
-        onLeave: function (index, nextIndex, direction) {
-            console.log("ONLEAVE - index:" + index + " nextIndex:" + nextIndex + " direction:" + direction);
-
-        },
+        anchors: ['firstPage','secondPage','3rdPage', '4thPage', 'lastPage'],
+        sectionsColor: ['whitesmoke', 'whitesmoke', 'whitesmoke', 'whitesmoke', '#ccddff'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Main', 'About','Experience', 'Contact']
     });
 </script>
+
 
 
 </body>

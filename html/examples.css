@@ -66,7 +66,8 @@ p{
 }
 .intro p{
 	width: 50%;
-	margin: 0 auto;
+	margin-top: 0;
+	margin-left: 10px;
 	font-size: 1.5em;
 	color: #000;
 }
@@ -91,10 +92,10 @@ p{
 #menu li a{
 	text-decoration:none;
 	
-	color: #000;
+	color: #cbf3f0;
 }
 #menu a:hover{
-	color: #FFBF69;
+	color: #2ec4b6;
 }
 
 #menu li a,
@@ -117,6 +118,7 @@ p{
 	
 	
 }
+
 
 
 .twitter-share-button{
