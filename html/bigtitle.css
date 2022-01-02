@@ -69,7 +69,8 @@
 		font-family: '나눔고딕 ExtraBold';
 		font-size: 5em;
 		color: #444;
-
+		display: block;
+		overflow: hidden;
 	}
    
 	#dial{height: 360px; width: 224px;}
@@ -109,7 +110,10 @@
 			color: #ffbf69;
 		}
 
-		#section1{background-image: url(./../img/bgimg01.png);}
+		#section1{
+			background-image: url(./../img/bgimg01.png);
+			background-repeat: no-repeat;
+		}
 		
 		.slider {
 			margin-left: auto;
